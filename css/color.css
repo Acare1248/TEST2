@@ -1,0 +1,97 @@
+<style>
+.mdl-card {
+  width: 256px;
+  height: 128px;
+  margin: .5em;
+}
+.mdl-card__actions {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+.mdl-card__title {
+  align-items: flex-start;
+}
+.mdl-card__title > h4 {
+  margin-top: 0;
+}
+.mdl-card__actions {
+  display: flex;
+  box-sizing:border-box;
+  align-items: center;
+}
+.mdl-card__title,
+.mdl-card__actions
+{
+  color: #FFFFFF;
+}
+.mdl-card__actions > .mdl-button {
+  color: #424242;
+}
+
+.material-icons {
+  color: #424242;
+}
+
+.red {
+  background: #F44336;
+}
+.pink {
+  background: #E91E63;
+}
+.purple {
+  background: #9C27B0;
+}
+.deepPurple {
+  background: #673AB7;
+}
+.indigo {
+  background: #3F51B5;
+}
+.blue {
+  background: #2196F3;
+}
+.lightBlue {
+  background: #03A9F4;
+}
+.cyan {
+  background: #00BCD4;
+}
+.teal {
+  background: #009688;
+}
+.green {
+  background: #4CAF50;
+}
+.lightGreen {
+  background: #8BC34A;
+}
+.lime {
+  background: #CDDC39;
+}
+.yellow {
+  background: #FFEB3B;
+}
+.amber {
+  background: #FFC107;
+}
+.orange {
+  background: #000000;
+}
+.deepOrange {
+  background: #FF5722;
+}
+.brown {
+  background: #795548;
+}
+.grey {
+  background: #9E9E9E;
+}
+.blueGrey {
+  background: #607D8B;
+}
+.black {
+  background: #000000;
+}
+.white {
+  background: #FFFFFF;
+}
+</style>

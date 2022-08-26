@@ -1,0 +1,165 @@
+@charset "utf-8";
+/* CSS Document */
+
+#portal_mainmenu_bar {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	background-color:#2e2f34;
+	color:#878787;
+	padding:0px 0px 0px 0px;
+}
+#portal_footer_bar {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	background-color:#2e2f34;
+	color:#878787;
+	padding:20px 0px;
+	margin-top:10px;
+}
+
+.margin_top20bot20{	 
+	padding: 10px 0px 10px 0px;   /*บน   ขวา   ล่าง    ซ้าย*/
+				
+}
+.margin_around3{	 
+	padding: 3px 3px 3px 3px;   /*บน   ขวา   ล่าง    ซ้าย*/			
+}
+
+.widget {
+    border-radius: 3px;
+    /*margin-bottom: 10px;*/
+    color: #fff;
+	/*padding: 15px;*/
+    padding: 10px;
+    overflow: hidden;
+}
+
+.widget2 {
+    border-radius: 3px;
+    margin-bottom: 10px;
+    color: #fff;
+    padding: 3px;
+    overflow: hidden;
+}
+
+.widget-state .state-info h4 {
+    font-size: 12px;
+    margin: 5px 0;
+    color: #fff;
+}
+
+.widget-state .state-icon {
+    float: right;
+    font-size: 38px;
+    height: 45px;
+    width: 38px;
+    text-align: center;
+    line-height: 56px;
+    margin-left: 5px;
+    color: #fff;
+	margin:25px 15px 0px 0px;
+}
+
+.widget-state .state-info p {
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 0;
+    min-height: 42px;
+}
+
+.widget-state .state-link a {
+    display: block;
+    margin: 15px -15px -15px;
+   padding: 10px 15px;
+    background: #333;
+    background: rgba(0,0,0,.4);
+    /*text-align: right;*/
+    color: #ddd;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+    .widget-state .state-link a:focus, .widget-state .state-link a:hover {
+        background: #000;
+        background: rgba(0,0,0,.6);
+        color: #fff;
+    }
+	
+.bg-blue {
+    background: #348fe2 !important;
+}
+.bg-blue-pale {
+    background: #5EA4E9 !important;
+}
+.bg-purple {
+    background: #727CB7 !important;
+}
+.bg-blue-green-pale {
+    background: #49B6D5 !important;
+}
+.bg-green-pale {
+    background: #33BDBD !important;
+}
+.bg-red-orage {
+    background: #FF5C57 !important;
+}
+.bg-purple-dark {
+    background: #5B6392 !important;
+}
+.bg-blue2 {
+    background: #2B71B6 !important;
+}
+.bg-red-birdblood {
+    background: #CD4945 !important;
+}
+.bg-green-bitong {
+    background: #B6C932 !important;
+}
+.bg-blue-pale2 {
+    background: #348FE2 !important;
+}
+.bg-yellow {
+    background: #F7B048 !important;
+}
+.bg-blue-very-pale {
+    background: #6EC6DE !important;
+}
+.bg-yellow-dark {
+    background: #F59C1A !important;
+}
+.bg-gray {
+    background: #B5C2CA !important;
+}
+.bg-green-dark {
+    background: #008A8A !important;
+}
+.bg-yellow-brown {
+    background: #C47D15 !important;
+}
+.bg-green-middle {
+    background: #00ACAC !important;
+}
+.bg-red-pale {
+    background: #FF7C78 !important;
+}
+
+
+
+.badge_top {
+	display: inline-block;
+	min-width: 10px;
+	padding: 3px 7px;
+	font-size: 1.1em;
+	font-weight: 700;
+	line-height: 1;
+	color: #fff;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	background-color: #F6821B;
+	border-radius: 10px; position:absolute; z-index:2; right:20px;
+	bottom:30px; 
+}
+.font_tahoma_16_bold{
+	font-family:Tahoma;
+	font-size:16px;
+	font-weight:bold;
+}

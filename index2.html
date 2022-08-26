@@ -1,0 +1,194 @@
+<html lang="en" >
+  <head>
+    <meta charset="utf-8">
+    <!--meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <META NAME="Author" CONTENT="Information Technology Service Center: ITSC">
+    <META NAME="Keywords"  lang="th" CONTENT="บริการหลักของ ITSC">
+    <META NAME="description" CONTENT="CMU Portal, ITSC Services">
+    <link rel="icon" href="favicon.ico"-->
+    <title>Nichidai Link</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/portal2016.css" rel="stylesheet">
+    <link href="css/color.css" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery_1.3.0.min.js"></script>
+    <link href="js/font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href='//fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.deep_purple-purple.min.css" />
+    <script src="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.min.js"></script>
+    <!--script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></!--script -->
+  </head>
+  <body /ng-controller="mainController" style="background: #FFFFFF;">
+  <div class="navbar-wrapper">
+      <div class="container">
+      	<div class="row">
+            <div class="col-lg-4 col-md-8 col-sm-12 col-xs-12">
+                <!--img src="images/banner_itsc.jpg" class="img-responsive" /-->
+            </div>
+            <div class="col-lg-6 col-md-4 col-sm-12 col-xs-12">
+                <h1 style="font-size: 32px;line-height: 0.5;letter-spacing: -.02em;margin: 24px 0;"><font color="#666666">Link Nichidai </font></h1>
+            </div>
+   		</div>
+
+<div id="portal_mainmenu_bar" class="row">
+  <!--<h1 style="padding-left:.5em;">ITSC {{search.type}} services</h1>-->
+  <!--<div style="padding:1em;">-->
+    <!-- Simple Textfield -->
+  <form action="#" style="margin-bottom:0em;">
+    <div class="mdl-textfield mdl-js-textfield">
+      <input class="mdl-textfield__input" type="text" /ng-model="search.$" style="color:#F6821B; padding-left:1em;">
+      <label class="mdl-textfield__label" for="sample1" style="color:#F6821B; padding-left:1em;">Search ...</label>
+  </div>
+  <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" /ng-click="search.type='';" style="color:#FFFFFF">All</button>
+  <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" /ng-click="search.type='student';" style="color:#FFFFFF">TH</button>
+  <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" /ng-click="search.type='staff';" style="color:#FFFFFF">EN</button>
+   Sort by :
+  <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" /ng-click="order='nameEng'" style="color:#FFFFFF">A-Z</button>
+  <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" /ng-click="order='-count'" style="color:#FFFFFF">Popular</button>
+ 	</form>
+  <!--</div>-->
+</div>
+
+
+<div style="padding:0px 0px 0px 0px;" class="mdl-grid">
+  <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" style=" padding-left:5px; padding-right:5px; padding-top:10px;"  >
+                      <div class="widget widget-state" style="background-color:{{app.color_code}}; cursor: pointer;"  /code_color > 
+                          <div class="state-icon"><i class="{{app.icon_code}}" /icon_code ></i></div>
+                          <div class="state-info">
+                            <div style="height: 110px; overflow: hidden;">
+                              <p><font size="+1" color="#333333"><strong>{{app.nameEng}}</strong></font></p>
+                              <p><font size="3">{{app.nameThai}}</font></p>
+                            </div>
+                          </div>
+                          <div class="state-link">
+  
+  
+                              <a href="{{app.url}}"  class="" target="_blank"  > <i class="fa fa-arrow-circle-o-right"></i> Click <span id="span_{{app.id}}" style="color:#FFF" class="badge_top">{{app.count}}</span></a>
+  
+  
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" style=" padding-left:5px; padding-right:5px; padding-top:10px;"  >
+                    <div class="widget widget-state" style="background-color:{{app.color_code}}; cursor: pointer;" >
+                        <div class="state-icon"><i class="{{app.icon_code}}"></i></div>
+                        <div class="state-info">
+                          <div style="height: 110px; overflow: hidden;">
+                            <p><font size="+1" color="#333333"><strong>{{app.nameEng}}</strong></font></p>
+                            <p><font size="3">{{app.nameThai}}</font></p>
+                          </div>
+                        </div>
+                        <div class="state-link">
+
+
+                            <a href="{{app.url}}"  class="" target="_blank"  > <i class="fa fa-arrow-circle-o-right"></i> Click <span id="span_{{app.id}}" style="color:#FFF" class="badge_top">{{app.count}}</span></a>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" style=" padding-left:5px; padding-right:5px; padding-top:10px;"  >
+                  <div class="widget widget-state" style="background-color:{{app.color_code}}; cursor: pointer;" >
+                      <div class="state-icon"><i class="{{app.icon_code}}"></i></div>
+                      <div class="state-info">
+                        <div style="height: 110px; overflow: hidden;">
+                          <p><font size="+1" color="#333333"><strong>{{app.nameEng}}</strong></font></p>
+                          <p><font size="3">{{app.nameThai}}</font></p>
+                        </div>
+                      </div>
+                      <div class="state-link">
+
+
+                          <a href="{{app.url}}"  class="" target="_blank"  > <i class="fa fa-arrow-circle-o-right"></i> Click <span id="span_{{app.id}}" style="color:#FFF" class="badge_top">{{app.count}}</span></a>
+
+
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" style=" padding-left:5px; padding-right:5px; padding-top:10px;"  >
+                <div class="widget widget-state" style="background-color:{{app.color_code}}; cursor: pointer;" >
+                    <div class="state-icon"><i class="{{app.icon_code}}"></i></div>
+                    <div class="state-info">
+                      <div style="height: 110px; overflow: hidden;">
+                        <p><font size="+1" color="#333333"><strong>{{app.nameEng}}</strong></font></p>
+                        <p><font size="3">{{app.nameThai}}</font></p>
+                      </div>
+                    </div>
+                    <div class="state-link">
+
+
+                        <a href="{{app.url}}"  class="" target="_blank"  > <i class="fa fa-arrow-circle-o-right"></i> Click <span id="span_{{app.id}}" style="color:#FFF" class="badge_top">{{app.count}}</span></a>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" style=" padding-left:5px; padding-right:5px; padding-top:10px;"  >
+              <div class="widget widget-state" style="background-color:{{app.color_code}}; cursor: pointer;" >
+                  <div class="state-icon"><i class="{{app.icon_code}}"></i></div>
+                  <div class="state-info">
+                    <div style="height: 110px; overflow: hidden;">
+                      <p><font size="+1" color="#333333"><strong>{{app.nameEng}}</strong></font></p>
+                      <p><font size="3">{{app.nameThai}}</font></p>
+                    </div>
+                  </div>
+                  <div class="state-link">
+
+
+                      <a href="{{app.url}}"  class="" target="_blank"  > <i class="fa fa-arrow-circle-o-right"></i> Click <span id="span_{{app.id}}" style="color:#FFF" class="badge_top">{{app.count}}</span></a>
+
+
+                  </div>
+              </div>
+          </div>
+  </div>
+
+              	<div id="portal_footer_bar" class="row">
+        			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" align="center">
+              			<a href="http://itsc.cmu.ac.th" target="_blank" style="color:#999"></a> <a href="mailto:onestop@cmu.ac.th" style="color:#999">onestop@cmu.ac.th</a>
+              		</div>
+                </div>
+              <!--</li>
+            </ul>
+          </div>
+        </footer>-->
+
+		</div>
+	</div>
+
+  </body>
+<script>
+  var portalApp = angular.module('portalApp',[]);
+
+  portalApp.controller('mainController',function($scope,$http){
+    $scope.apps = [];
+    $scope.userType = '';
+    $scope.order = '-count';
+    $http.get('getApps.php').
+    success(function(response){
+      $scope.apps = response;
+    });
+
+    $scope.redirect = function(id){
+
+
+		$.ajax({
+		type: "GET",
+		//url: "view_like.php?id="+post_id+"&st="+post_st,
+		url: "setcount.php?id="+id,
+		cache: false,
+		success: function(html)
+		{
+		$('#span_'+id).text(jQuery.trim(html));
+
+		}
+		});//จบการส่งข้อมูล
+
+
+      window.open("redirect.php?id="+id);
+    }
+  });
+</script>
+</html>
